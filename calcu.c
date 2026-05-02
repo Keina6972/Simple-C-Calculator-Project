@@ -11,7 +11,8 @@ int subtraction(int a, int b, int hasil) {
 }
 
 int multiplication(int a, int b, int hasil) {
-    
+    hasil = a*b;
+    return hasil;
 }
 
 int division(int a, int b, int hasil) {
@@ -40,6 +41,8 @@ int main() {
         printf("Hasil pengurangan %d dan %d adalah %d", angka1, angka2, hasil);
     }
     else if (pilihan == 3) {
+    	hasil = multiplication(angka1, angka2, hasil);
+		printf("Hasil perkalian %d dengan %d adalah %d", angka1, angka2, hasil);
 	}
 	else if (pilihan == 4) {
 		hasil = division(angka1, angka2, hasil);
